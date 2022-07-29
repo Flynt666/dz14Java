@@ -12,7 +12,7 @@ public class ProductRepositoryTest {
     private final Book Book1 = new Book(1, "100 кулинарных рецептов", 135, "Евгений Пашот");
     private final Book Book2 = new Book(2, "Незнайка на Луне", 455, "Николай Носов");
 
- 
+
     @Test
     public void shouldRemoveById() {
         repository.save(Book1);

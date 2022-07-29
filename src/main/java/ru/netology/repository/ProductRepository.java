@@ -19,7 +19,7 @@ public class ProductRepository {
         return products;
     }
 
-    public Product[] findById (int id){
+    public Product[] findById(int id) {
         Product[] result = new Product[1];
         for (Product product : products) {
             if (product.getId() == id) {
@@ -31,9 +31,10 @@ public class ProductRepository {
         } else return result;
 
     }
+
     public void removeById(int id) {
         try {
-            findById (id);
+            findById(id);
             int length = products.length - 1;
             Product[] tmp = new Product[length];
             int index = 0;
